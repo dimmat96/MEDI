@@ -103,6 +103,10 @@ a {
 .arrow__left {
   transform: scale(-1, 1);
 }
+.arrow:hover {
+  transition: 0.2s ease-in-out;
+  color: black;
+}
 
 .more {
   max-width: 200px;
@@ -438,16 +442,6 @@ a {
   margin: 40px 0 30px 40px;
   color: var(--color-white);
 }
-.news__text {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 30px 40px;
-  max-width: 75%;
-  padding: 20px 0;
-}
-.news__text-container--active {
-  background-color: var(--color-accent-1);
-}
 .news__right {
   max-width: 58%;
   background-color: var(--color-accent-3);
@@ -455,26 +449,69 @@ a {
 .news__right__title {
   font-weight: 600;
   color: var(--color-black);
-  font-size: 30px;
+  font-size: 24px;
   padding: 40px 40px 20px 40px;
   margin: 0;
 }
-.news__list {
-  padding: 20px 40px 20px 40px;
-}
-.news__item {
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.news__item__circle {
+.news__circle {
   fill: var(--color-accent-1);
   margin-bottom: 18px;
   margin-right: 10px;
 }
-.news__item:not(:last-child) {
-  padding-bottom: 30px;
+
+.tabs__items {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+.tabs__item {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 16px;
+  padding: 10px 30px 10px 40px;
+}
+.tabs__item:hover {
+  background-color: var(--color-accent-1);
+  transition: 0.2s ease-in-out;
+}
+.tabs__body {
+  color: var(--color-black);
+  font-size: 16px;
+  padding: 10px 30px 10px 40px;
+}
+.tabs__block {
+  display: flex;
+}
+.tabs__block:before {
+  content: "";
+  height: 50px;
+  width: 33.333%;
+  position: absolute;
+  top: -50px;
+}
+.tabs__block:nth-child(1) {
+  background-color: #eb8698;
+}
+.tabs__block:nth-child(1):before {
+  background-color: #eb8698;
+  left: 0;
+}
+.tabs__block:nth-child(2) {
+  background-color: #9278aa;
+}
+.tabs__block:nth-child(2):before {
+  background-color: #9278aa;
+  left: 33.333%;
+}
+.tabs__block:nth-child(3) {
+  background-color: #97c67d;
+}
+.tabs__block:nth-child(3):before {
+  background-color: #97c67d;
+  right: 0;
+}
+.tabs__block:target {
+  display: block;
 }
 
 .offers {
