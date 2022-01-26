@@ -6,12 +6,7 @@ console.log('global');
 console.log('maxgraph');
 "use strict";
 
-/**
-  * название функции
-  *
-  * @param {number} first - первое число
-  * @returns {number}
-  */
+// tabs
 var tabsBtn = document.querySelectorAll(".tabs__nav-btn");
 var tabsItems = document.querySelectorAll(".tabs__item");
 tabsBtn.forEach(onTabClick);
@@ -35,5 +30,12 @@ function onTabClick(item) {
   });
 }
 
-document.querySelector('.tabs__nav-btn').click();
+document.querySelector('.tabs__nav-btn').click(); // burger
+
+var menuBtn = document.querySelector('.menu-btn');
+var menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+});
 //# sourceMappingURL=main.js.map
