@@ -19,14 +19,14 @@
 
     <!-- Верхняя панель -->
     <div class="header__container">
-      <div class="logo header__border">
+      <div class="logo">
         <img src="img/logo.png" alt="medi" class="logo__img">
       </div>
       <div class="header__flex-end">
-        <div class="tel header__border">
+        <div class="tel">
           <a class="tel__number" href="tel:+12345678">+7&nbsp;(123)&nbsp;456&nbsp;78&nbsp;90</a>
         </div>
-        <div class="blind header__blind header__border">
+        <div class="blind blind__header">
           <a href="#" class="blind__link">
             <button class="blind__btn btn-reset">
               <svg class="blind__eye" width="26" height="22" viewBox="0 0 26 22" fill="none"
@@ -60,7 +60,7 @@
           <li class="nav__item"><a href="#" class="nav__link"></a>Контакты</a></li>
         </ul>
       </nav>
-      <div class="blind nav__blind header__border">
+      <div class="blind blind__nav">
         <a href="#" class="blind__link">
           <button class="blind__btn btn-reset">
             <svg class="blind__eye" width="26" height="22" viewBox="0 0 26 22" fill="none"
@@ -397,18 +397,26 @@
             </div>
         </div>
         <div class="services-right">
-            <p class="services-right__title">ТЕЛЕФОН</p>
-            <a href="tel:+1234567890" class="services-right__tel">+7 (812) 123-45-67</a>
-            <p class="services-right__title">АДРЕС</p>
-            <a class="services-right__address" target="_blank" href="https://yandex.ru/maps/-/CCUubQG7SC">Невский пр. 140, пом. 19</a>
-            <a href="#" class="services-right__btn-link">
-                <button class="services-right__btn btn-reset">КАК ПРОЕХАТЬ?</button>
-            </a>
-            <p class="services-right__title">АДРЕС</p>
-            <a class="services-right__address" target="_blank" href="https://yandex.ru/maps/-/CCUubQG7SC">Большой пр. 12</a>
-            <a href="#" class="services-right__btn-link">
-                <button class="services-right__btn btn-reset">КАК ПРОЕХАТЬ?</button>
-            </a>
+            <div class="services-right__container services-right__container--1">
+                <p class="services-right__title">ТЕЛЕФОН</p>
+                <a href="tel:+1234567890" class="services-right__tel">+7 (812) 123-45-67</a>
+            </div>
+            <div class="services-right__container services-right__container--2">
+                <p class="services-right__title">АДРЕС</p>
+                <a class="services-right__address" target="_blank" href="https://yandex.ru/maps/-/CCUubQG7SC">Невский
+                    пр. 140, пом. 19</a>
+                <a href="#" class="services-right__btn-link">
+                    <button class="services-right__btn btn-reset">КАК ПРОЕХАТЬ?</button>
+                </a>
+            </div>
+            <div class="services-right__container services-right__container--2">
+                <p class="services-right__title">АДРЕС</p>
+                <a class="services-right__address" target="_blank" href="https://yandex.ru/maps/-/CCUubQG7SC">Большой
+                    пр. 12</a>
+                <a href="#" class="services-right__btn-link">
+                    <button class="services-right__btn btn-reset">КАК ПРОЕХАТЬ?</button>
+                </a>
+            </div>
         </div>
     </div>
 </section>
