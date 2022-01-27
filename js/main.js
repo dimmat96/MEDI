@@ -33,9 +33,11 @@ function onTabClick(item) {
 document.querySelector('.tabs__nav-btn').click(); // burger
 
 var menuBtn = document.querySelector('.menu-btn');
+var scrollLock = document.querySelector('body');
 var menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', function () {
   menuBtn.classList.toggle('active');
   menu.classList.toggle('active');
+  scrollLock.classList.toggle('active');
 });
 //# sourceMappingURL=main.js.map
