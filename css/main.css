@@ -51,6 +51,9 @@ body {
   margin: 0;
   font-family: "Gilroy", sans-serif;
 }
+body .active {
+  overflow: hidden;
+}
 
 img {
   max-width: 100%;
@@ -115,10 +118,6 @@ a {
 .more__text {
   color: var(--color-white);
   text-transform: uppercase;
-}
-
-body .active {
-  overflow: hidden;
 }
 
 .header {
@@ -787,6 +786,7 @@ body .active {
 @media (max-width: 768px) {
   .services-right__container {
     flex-direction: column;
+    padding: 0 30px;
   }
 }
 .services-right__container--1 {
@@ -915,6 +915,10 @@ body .active {
   .menu-btn {
     display: none;
   }
+}
+.menu-btn.active {
+  position: fixed;
+  right: 20px;
 }
 .menu-btn.active span:nth-of-type(1) {
   display: none;
