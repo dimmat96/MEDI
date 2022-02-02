@@ -1,0 +1,14 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent-1: #00868A;
+  --color-accent-2: #4FBFA5;
+  --color-accent-3: #e5f3f3;
+
+
+  --font-family: "Gilroy", sans-serif;
+  --high-bold: 700 24px / 140% var(--font-family);
+  --middle-regular: 400 18px / 18px var(--font-family);
+}

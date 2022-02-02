@@ -1,0 +1,121 @@
+.innovations {
+    top: 0;
+    left: 0;
+    padding: 80px 0;
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        background-color: var(--color-accent-1);
+        color: var(--color-white);
+        max-width: 42%;
+        @media (max-width: 900px) {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        display: inline-block;
+        font-size: 18px;
+        background-color: var(--color-accent-2);
+        padding: 10px;
+        margin: 40px 0 30px 40px;
+        color: var(--color-white);
+        
+    }
+    &__descr {
+        font-size: 30px;
+        line-height: 1.5;
+        margin: 0 0 30px 40px;
+    }
+    &__arrow {
+        margin-right: 20px;
+    }
+    &__more {
+        margin: 0 0 30px 40px;
+        
+    }
+    &__img {
+        background-image: url("../img/hero.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 280px;
+    }
+    &__right {
+        width: 58%;
+        position: relative;
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+    }
+    &__title--right {
+        padding: 10px;
+        margin: 40px 0 30px 40px;
+    }
+}
+.patent {
+    position: absolute;
+    background-image: url("../img/patent.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 306px;
+    height: 400px;
+    top: 100px;
+    right: 50px;
+    opacity: 0.3;
+    @media (max-width: 1100px) {
+        right: 10px;
+    }
+    @media (max-width: 1010px) {
+        right: -20px;
+    }
+}
+.statistic {
+    &__item {
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        color: gray;
+        padding: 10px;
+        margin: 40px 0 30px 40px;
+    }
+    &__number {
+        font-size: 48px;
+        margin: 0;
+        padding-right: 10px;
+        z-index: 1;
+    }
+    &__number--active {
+        font-weight: 500;
+        font-size: 78px;
+        color: var(--color-accent-1);
+    }
+    &__descr {
+        max-width: 170px;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 14px;
+        padding-top: 5px;
+        z-index: 1;
+    }
+    &__descr--active {
+        font-size: 24px;
+        max-width: 300px;
+        padding-top: 10px;
+        color: var(--color-black);
+        @media (max-width: 480px) {
+            font-size: 20px;
+            line-height: 1.3;
+        }
+    }
+}
